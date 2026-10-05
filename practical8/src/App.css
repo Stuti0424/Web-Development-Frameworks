@@ -1,0 +1,837 @@
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: #2c3e50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.brand-mark {
+    display: grid;
+    place-items: center;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background: transparent;
+    color: white;
+    font-size: 24px;
+}
+
+.logo {
+    font-size: 24px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #5b5cf0;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 0;
+}
+
+.nav-links a {
+    padding: 20px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: white;
+
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    background: #3498db;
+    color: white;
+}
+
+.nav-links a.active {
+    background: #3498db;
+    color: white;
+}
+
+
+/* ============================= */
+/* MAIN CONTAINER */
+/* ============================= */
+
+.page-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 20px;
+}
+
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero-section {
+    padding: 30px 20px 10px;
+    position: relative;
+}
+
+.eyebrow {
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #3498db;
+
+    margin-bottom: 15px;
+}
+
+.hero-section h1 {
+    max-width: 700px;
+
+    color: #2c3e50;
+    font-size: 36px;
+
+    line-height: 1.05;
+
+    letter-spacing: 0;
+
+    margin-bottom: 20px;
+}
+
+.hero-section h1 span {
+    color: #3498db;
+}
+
+.hero-description {
+    max-width: 650px;
+
+    color: #697386;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* ============================= */
+/* OPTIMIZATION CARD */
+/* ============================= */
+
+.optimization-card {
+    background: #2c3e50;
+
+    color: white;
+
+    padding: 26px 30px;
+
+    border-radius: 8px;
+
+    margin: 20px 20px 30px;
+}
+
+.optimization-card > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.optimization-icon {
+    width: 50px;
+    height: 50px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: #3498db;
+
+    border-radius: 12px;
+
+    font-size: 24px;
+}
+
+.optimization-card h2 {
+    margin-bottom: 6px;
+
+    font-size: 20px;
+}
+
+.optimization-card p {
+    color: #b7bdd2;
+
+    line-height: 1.5;
+}
+
+
+/* ============================= */
+/* TASK SECTION */
+/* ============================= */
+
+.task-section {
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    padding: 32px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.section-label {
+    color: #7c8496;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 5px;
+}
+
+.section-heading h2 {
+    font-size: 28px;
+}
+
+.task-count {
+    background: #eaf4fb;
+
+    color: #2c3e50;
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+.task-form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr auto;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.task-form input,
+.task-form textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #dfe3ea;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    resize: vertical;
+
+    min-height: 48px;
+}
+
+.task-form input:focus,
+.task-form textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.task-form button {
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 0 22px;
+
+    background: #3498db;
+
+    color: white;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.task-form button:hover {
+    background: #2980b9;
+}
+
+.task-form button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* ============================= */
+/* TASK LIST */
+/* ============================= */
+
+.task-list {
+    display: grid;
+
+    gap: 12px;
+}
+
+.task-card {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.task-card.completed {
+    background: #f8faf9;
+}
+
+.task-content h3 {
+    margin-bottom: 7px;
+
+    font-size: 17px;
+}
+
+.task-content p {
+    color: #737c8e;
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+}
+
+.status {
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.pending-status {
+    background: #fff4df;
+
+    color: #a96800;
+}
+
+.completed-status {
+    background: #e6f7ed;
+
+    color: #16834d;
+}
+
+.task-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.task-actions button {
+    border: 1px solid #dfe3ea;
+
+    background: white;
+
+    padding: 9px 12px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.task-actions button:hover {
+    background: #f5f5f5;
+}
+
+.task-actions .delete-button {
+    color: #c33d4c;
+}
+
+
+/* ============================= */
+/* EMPTY / ERROR */
+/* ============================= */
+
+.empty-state {
+    text-align: center;
+
+    padding: 55px 20px;
+
+    border: 1px dashed #d9dde6;
+
+    border-radius: 8px;
+}
+
+.empty-state h3 {
+    margin-bottom: 7px;
+}
+
+.empty-state p {
+    color: #788194;
+}
+
+.error-message {
+    padding: 13px 15px;
+
+    margin-bottom: 20px;
+
+    border-radius: 9px;
+
+    background: #fff0f1;
+
+    color: #c33443;
+
+    font-size: 14px;
+}
+
+
+/* ============================= */
+/* LOADING */
+/* ============================= */
+
+.loading-page {
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #687185;
+}
+
+.spinner {
+    width: 38px;
+
+    height: 38px;
+
+    border: 4px solid #dceaf4;
+
+    border-top-color: #3498db;
+
+    border-radius: 50%;
+
+    animation:
+        spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ============================= */
+/* SIMPLE PAGES */
+/* ============================= */
+
+.simple-page {
+    max-width: 1180px;
+
+    margin: auto;
+
+    padding: 80px 24px;
+}
+
+.simple-page-content {
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.toast {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 120;
+    padding: 13px 17px;
+    border-radius: 4px;
+    background: #2c3e50;
+    color: white;
+    box-shadow: 0 12px 30px rgba(24, 59, 41, 0.24);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .navbar-container {
+        padding: 14px 18px;
+    }
+
+    .nav-links {
+        gap: 2px;
+    }
+
+    .nav-links a {
+        padding: 8px 9px;
+        font-size: 12px;
+    }
+
+    .page-container {
+        padding: 28px 16px 42px;
+    }
+
+    .hero-section h1 {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .optimization-card > div,
+    .section-heading,
+    .task-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .task-section {
+        padding: 22px 16px;
+    }
+
+    .task-form {
+        grid-template-columns: 1fr;
+    }
+
+    .task-form button {
+        min-height: 46px;
+    }
+
+    .task-actions {
+        width: 100%;
+    }
+
+    .task-actions button {
+        flex: 1;
+    }
+}
+
+.page-badge {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background: #eeefff;
+
+    color: #5556e8;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+.simple-page h1 {
+    font-size: 50px;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 20px;
+}
+
+.simple-page > div > p {
+    color: #70798c;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+.simple-page strong {
+    color: #5556e8;
+}
+
+
+/* ============================= */
+/* INFO GRID */
+/* ============================= */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+
+    margin-top: 45px;
+
+    text-align: left;
+}
+
+.info-card {
+    background: white;
+
+    border: 1px solid #e5e8ef;
+
+    border-radius: 15px;
+
+    padding: 25px;
+}
+
+.info-card > span {
+    color: #5b5cf0;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+.info-card h3 {
+    margin: 15px 0 8px;
+}
+
+.info-card p {
+    color: #737c8e;
+
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+/* CONTACT */
+/* ============================= */
+
+.contact-card {
+    margin-top: 40px;
+
+    display: grid;
+
+    gap: 14px;
+
+    text-align: left;
+}
+
+.contact-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: white;
+
+    border: 1px solid #e5e8ef;
+
+    border-radius: 14px;
+
+    padding: 20px;
+}
+
+.contact-item > span {
+    font-size: 25px;
+}
+
+.contact-item small {
+    color: #858d9d;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.contact-item p {
+    color: #222b3c;
+
+    margin-top: 4px;
+
+    font-size: 15px;
+}
+
+
+/* ============================= */
+/* TOAST */
+/* ============================= */
+
+.toast {
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    background: #171a2b;
+
+    color: white;
+
+    padding: 13px 18px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 10px 30px rgba(
+            0,
+            0,
+            0,
+            0.2
+        );
+
+    font-size: 14px;
+
+    z-index: 200;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 800px) {
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .task-form {
+        grid-template-columns: 1fr;
+    }
+
+    .task-form button {
+        min-height: 48px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .task-card {
+        flex-direction: column;
+    }
+
+    .task-actions {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar-container {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .page-container {
+        padding: 35px 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 34px;
+    }
+
+    .task-section {
+        padding: 20px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+    }
+
+    .simple-page h1 {
+        font-size: 38px;
+    }
+}
